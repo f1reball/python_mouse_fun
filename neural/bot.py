@@ -3,8 +3,7 @@ import threading
 from pynput.mouse import Button, Controller as mousecontrol
 from pynput.keyboard import Key, Controller as keyboardcontrol
 
-item = "test plz ignore"
-limit = 3
+item = "test PLZ ignore"
 
 
 mouse = mousecontrol()
@@ -14,7 +13,7 @@ mouse.press(Button.left)
 mouse.release(Button.left)
 
 counter = 0
-while(counter < limit):
+while(counter < 3):
     keyboard.type(item)
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
